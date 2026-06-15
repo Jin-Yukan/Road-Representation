@@ -30,13 +30,13 @@ Four types of network datasets are generated, including one primal graph and thr
 ## Usage
 
 1. Install and configure **geopandas** and **networkx** within the **ArcGIS Pro 3.0** Python environment. Detailed versions are as follows:
-   - GeoPandas 0.9.0
-   - Pandas 1.3.5
-   - Shapely 2.0.1
-   - Fiona 1.8.21
-   - PyProj 2.6.1
-   - NetworkX 2.7.1
-   - NumPy 1.20.1
+    GeoPandas 0.9.0
+    Pandas 1.3.5
+    Shapely 2.0.1
+    Fiona 1.8.21
+    PyProj 2.6.1
+    NetworkX 2.7.1
+    NumPy 1.20.1
 2. Prepare your road network dataset (e.g., from [OpenStreetMap](https://www.openstreetmap.org/)).  
 3. Run the scripts to process the road network. An example is provided in the `main` function.  
 
