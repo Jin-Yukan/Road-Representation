@@ -134,16 +134,16 @@ def repair_endpoint(centerline,road_aggregated,road_not_aggregated):
 
         nearest_intersection = nearby_points.loc[nearby_points.geometry.distance(node_geom).idxmin()]
         intersection_geom = nearest_intersection.geometry
-        if line.length < 100:
+        if line.length < 50:
             endpoints = [Point(coord) for coord in [line.coords[0], line.coords[-1]]]
             point_linked=[p for p in endpoints if not p.equals(node_geom)][0]
             new_line = LineString([point_linked.coords[0], intersection_geom.coords[0]])
         else:
             if Point(line.coords[0]) == node_geom:
-                sub_line = shapely.ops.substring(line,100, line.length)
+                sub_line = shapely.ops.substring(line,50, line.length)
                 new_line = LineString([intersection_geom.coords[0]]+list(sub_line.coords))
             else:
-                sub_line = shapely.ops.substring(line,0, line.length-100)
+                sub_line = shapely.ops.substring(line,0, line.length-50)
                 new_line =LineString(list(sub_line.coords)+[intersection_geom.coords[0]])
         centerline.loc[intersecting_centerlines.index, 'geometry'] = new_line
     return centerline
