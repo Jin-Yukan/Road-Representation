@@ -29,7 +29,7 @@ Four types of network datasets are generated, including one primal graph and thr
 
 ## Usage
 
-1. Install and configure **geopandas** within the **ArcGIS** Python environment.  
+1. Install and configure **geopandas** and **networkx** within the **ArcGIS Pro 3.0** Python environment.  
 2. Prepare your road network dataset (e.g., from [OpenStreetMap](https://www.openstreetmap.org/)).  
 3. Run the scripts to process the road network. An example is provided in the `main` function.  
 
