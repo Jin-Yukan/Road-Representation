@@ -247,7 +247,7 @@ def build_mixmap(seg_edges,roads_attri,savefile):
         strokes = coins.COINS(unnamed_edges,angle_threshold=135)
         stroke_gdf = strokes.stroke_gdf()
         mixed = pd.concat([namedstreet_gdf, stroke_gdf], ignore_index=True)
-        mixed.to_file(savefile)
+        mixed.to_file(savefile,encoding='utf-8')
     return mixed
 
 def build_and_save_network(edges_df, u,v,output_path):
