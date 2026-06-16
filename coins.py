@@ -1,3 +1,16 @@
+# This file contains code adapted from momepy.
+# Original project:
+# https://github.com/pysal/momepy
+#
+# Copyright (c) PySAL Developers
+#
+# Modifications:
+# - Adapted for road stroke generation
+# - Refactored geometry processing
+# - Added support for ...
+#
+# Licensed under the BSD 3-Clause License.
+
 import collections
 import math
 
