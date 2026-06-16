@@ -4,11 +4,6 @@
 #
 # Copyright (c) PySAL Developers
 #
-# Modifications:
-# - Adapted for road stroke generation
-# - Refactored geometry processing
-# - Added support for ...
-#
 # Licensed under the BSD 3-Clause License.
 
 import collections
