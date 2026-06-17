@@ -42,5 +42,5 @@ Four types of network datasets are generated, including one primal graph and thr
 
 ## Acknowledgements
 
-- Stroke generation code is adapted from [momepy](https://github.com/pysal/momepy).  
+- Stroke generation code is adapted from [momepy](https://github.com/pysal/momepy). The source code is licensed under the BSD 3-Clause License (see LICENSES file).  
 - Built on top of **arcpy**, **geopandas** and **networkx**.  
